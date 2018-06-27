@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- MyBatis 프레임워크에서 사용될 여러가지 환경 설정 정보들을 설정 -->
+<configuration>
+	<!-- 테이블의 이름, 컬럼 이름들 상수를 정의 -->
+	<properties>
+		<property name="tbl_member" value="tbl_member"/>
+		<property name="mId" value="mid"/>
+		<property name="mPw" value="mpw"/>
+		<property name="mEmail" value="memail"/>
+		<property name="mEmailcheck" value="memailcheck"/>
+		<property name="mRDate" value="mrdate"/>
+				
+		<property name="tbl_cinema1" value="tbl_cinema1" />
+		<property name="gId" value="gid" />
+		<property name="cNo" value="cno" />
+		<property name="cStart" value="cstart" />
+		<property name="cEnd" value="cend"/>
+		<property name="cCount" value="ccount"/>
+		<property name="cTicketNum" value="cticketnum"/>
+		
+		<property name="cNum" value="cnum" />
+		<property name="cPrice" value="cprice" />
+		<property name="totalTicket" value="totalticket"/>		
+	</properties>
+	
+	<!-- MyBatis 프레임워크에서 select의 결과를 저장할 Model 클래스(VO)를 찾기 위해서 -->
+	<typeAliases>
+		<package name="no.name.myapp.domain"/>
+	</typeAliases>
+	
+</configuration>
+
+
+
+
+
+
+
