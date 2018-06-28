@@ -7,4 +7,5 @@
 	<insert id="insertCinema1">
 		insert into ${tbl_cinema1} ($())
 	</insert>
+	
 </mapper>

@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
 <head>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <meta charset=UTF-8>
 <title>Insert title here</title>
-
+<!--  
 <style>
 table.type02 {
     border-collapse: separate;
@@ -39,57 +41,24 @@ table.type02 td {
 table.type02 {
         width: 100%;
     }
-
     .width-20 td {
         width: 20%;
     }
-
     .width-25 td {
         width: 25%;
     }
-
-    .buttons {
-        text-align: center;
-        font-size: 1.0em;
-        font-weight: bold;
-        line-height: 200%;
-    }
-    .buttons a {
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        margin-bottom: 0.5em;
-        padding-top: .6em;
-        padding-bottom: .6em;
-        color: #fff;
-        background-color: #aaabbb;
-        border-radius: 5px;
-        border: solid #cccccc 1px;
-        box-shadow: 2px 2px 1px #888888;
-    }
-    .buttons a:active {
-        box-shadow: 1px 1px 0px #888888;
     }
 </style>
-
+-->
 </head>
 <body>
-<h1>예매확인/취소</h1>
+<h1 align="center">예매확인/취소</h1>
 <hr/>
-<form action="search">
-	<select name="searchType">
-		<option value="1">년도</option>
-		<option value="2">월</option>
-		<option value="3">일</option>
-	</select>
-	<input type="text" name="searchKeyword" 
-		placeholder="검색어 입력" required />
-	<input type="submit" value="검색" />
-</form>
+<div class="container">
+<table class="table table-striped">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<table class="type02">
-<thead>
+<thead class="head">
+<thead class="table-danger">
 <tr>
 <th>예매번호</th>
 <th>영화이름</th>
@@ -100,18 +69,58 @@ table.type02 {
 </thead>
 <tbody>
 <tr>
-<td class="one">1번</td>
+<td>1번 </td>
 <td>둘리</td>
 <td>2008-06-26</td>
 <td>4매</td>
-<td>취소완료</td>
+<td>
+<button id="btn1" onclick="button_event();" class="btn btn-danger">예매취소</button>
+<div id="cancel" style="display:none;">취소됨</div>
+</td>
+</tr>
+<tr>
+<td>2번 </td>
+<td>양</td>
+<td>2008-06-26</td>
+<td>3매</td>
+<td>
+<button id="btn1" onclick="button_event();" class="btn btn-danger">예매취소</button>
+<div id="cancel" style="display:none;">취소됨</div>
+</td>
+</tr>
+<tr>
+<td>2번 </td>
+<td>양</td>
+<td>2008-06-26</td>
+<td>3매</td>
+<td>
+<button id="btn1" onclick="button_event();" class="btn btn-danger">예매취소</button>
+<div id="cancel" style="display:none;">취소됨</div>
+</td>
 </tr>
 </tbody>
 </table>
-<div align="right">
+</div>
+
+<div align="center">
+
 <button>
 메인
 </button>
 </div>
+<script>
+var btn1=document.getElementById('btn1');
+var cancel=document.getElementById('cancel');
+btn1.onclick=function() {
+if(confirm("정말로 취소하시겠습니까?") == true){
+	btn1.style.display='none';
+	cancel.style.display='block';
+}else {
+	return;
+}
+
+}
+
+</script>
 </body>
 </html>
