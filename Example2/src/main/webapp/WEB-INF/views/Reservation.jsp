@@ -105,7 +105,7 @@ table.type02 {
 <div align="center">
 
 <button>
-메인
+메인s
 </button>
 </div>
 <script>
