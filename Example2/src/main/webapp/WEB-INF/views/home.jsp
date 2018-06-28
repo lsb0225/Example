@@ -5,6 +5,7 @@
 	<title>Home</title>
 </head>
 <body>
+<<<<<<< HEAD
 <div class="btn-group bootstrap-select mr10">
 <button type="button" class="btn dropdown-toggle selectpicker btn-info" 
 	data-toggle="dropdown" data-id="ticketTypeCode_01" title="0">
@@ -41,5 +42,12 @@
 	<i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul>
 	</div>
 </div>
+=======
+<h1>
+	Hello world!  2017-06-28
+</h1>
+
+<P>  The time on the server is ${serverTime}. </P>
+>>>>>>> branch 'master' of https://github.com/lsb0225/example2.git
 </body>
 </html>
