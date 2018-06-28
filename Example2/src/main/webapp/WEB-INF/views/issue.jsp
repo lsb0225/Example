@@ -16,13 +16,18 @@
 	visibility: hidden;
 }
 button{
-	width: 35px; 
+	width: 35px;	
+}
+button:hover{
+	background-color: #6600ff;
+	color: white;
 }
 </style>
 </head>
 <body>
 <label>성인</label>
 <select id='selectbox1'>
+	<option value="0">0</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="3">3</option>
@@ -35,6 +40,7 @@ button{
 
 <label>청소년</label>
 <select id='selectbox2'>
+	<option value="0">0</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="3">3</option>
@@ -47,6 +53,7 @@ button{
 
 <label>어린이</label>
 <select id='selectbox3'>
+	<option value="0">0</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="3">3</option>
@@ -75,7 +82,7 @@ button{
 		</tr>
 		<tr>
 			<td><button id="B1">B1</button></td><td><button id="B2">B2</button></td>
-			<td><button class="h">B3</button><td><button id="B3">B3</button></td></td>
+			<td><button class="h">B3</button></td><td><button id="B3">B3</button></td>
 			<td><button id="B4">B4</button></td>
 			<td><button id="B5">B5</button></td><td><button id="B6">B6</button></td>
 			<td><button id="B7">B7</button></td><td><button id="B8">B8</button></td>
@@ -104,63 +111,68 @@ button{
 			
 		</tr>
 		<tr>
-			<td><button>E1</button></td><td><button>E2</button></td>
-			<td><button class="h">A3</button></td><td><button>E3</button></td>
-			<td><button>E4</button></td><td><button>E5</button></td>
-			<td><button>E6</button></td><td><button>E7</button></td>
-			<td><button>E8</button></td><td><button>E9</button></td>
-			<td><button>E10</button></td><td><button>E11</button></td>
-			<td><button>E12</button></td>			
+			<td><button id="E1">E1</button></td><td><button id="E2">E2</button></td>
+			<td><button class="h">A3</button></td><td><button id="E3">E3</button></td>
+			<td><button id="E4">E4</button></td><td><button id="E5">E5</button></td>
+			<td><button id="E6">E6</button></td><td><button id="E7">E7</button></td>
+			<td><button id="E8">E8</button></td><td><button id="E9">E9</button></td>
+			<td><button id="E10">E10</button></td><td><button id="E11">E11</button></td>
+			<td><button id="E12">E12</button></td>			
 		</tr>
 		<tr>
-			<td><button>F1</button></td><td><button>F2</button></td>
-			<td><button class="h">A3</button></td><td><button>F3</button></td>
-			<td><button>F4</button></td><td><button>F5</button></td>
-			<td><button>F6</button></td><td><button>F7</button></td>
-			<td><button>F8</button></td><td><button>F9</button></td>
-			<td><button>F10</button></td><td><button>F11</button></td>
-			<td><button>F12</button></td>			
+			<td><button id="F1">F1</button></td><td><button id="F2">F2</button></td>
+			<td><button class="h">A3</button></td><td><button id="F3">F3</button></td>
+			<td><button id="F4">F4</button></td><td><button id="F5">F5</button></td>
+			<td><button id="F6">F6</button></td><td><button id="F7">F7</button></td>
+			<td><button id="F8">F8</button></td><td><button id="F9">F9</button></td>
+			<td><button id="F10">F10</button></td><td><button id="F11">F11</button></td>
+			<td><button id="F12">F12</button></td>			
 		</tr>
 		<tr>
-			<td><button>G1</button></td><td><button>G2</button></td>
-			<td><button class="h">A3</button></td><td><button>G3</button></td>
-			<td><button>G4</button></td><td><button>G5</button></td>
-			<td><button>G6</button></td><td><button>G7</button></td>
-			<td><button>G8</button></td><td><button>G9</button></td>
-			<td><button>G10</button></td><td><button>G11</button></td>
-			<td><button>G12</button></td>			
+			<td><button id="G1">G1</button></td><td><button id="G2">G2</button></td>
+			<td><button class="h">A3</button></td><td><button id="G3">G3</button></td>
+			<td><button id="G4">G4</button></td><td><button id="G5">G5</button></td>
+			<td><button id="G6">G6</button></td><td><button id="G7">G7</button></td>
+			<td><button id="G8">G8</button></td><td><button id="G9">G9</button></td>
+			<td><button id="G10">G10</button></td><td><button id="G11">G11</button></td>
+			<td><button id="G12">G12</button></td>			
 		</tr>
 		<tr>
-			<td><button>H1</button></td><td><button>H2</button></td>
-			<td><button class="h">A3</button></td><td><button>H3</button></td>
-			<td><button>H4</button></td><td><button>H5</button></td>
-			<td><button>H6</button></td><td><button>H7</button></td>
-			<td><button>H8</button></td><td><button>H9</button></td>
-			<td><button>H10</button></td><td><button>H11</button></td>
-			<td><button>H12</button></td>			
+			<td><button id="H1">H1</button></td><td><button id="H2">H2</button></td>
+			<td><button class="h">A3</button></td><td><button id="H3">H3</button></td>
+			<td><button id="H4">H4</button></td><td><button id="H5">H5</button></td>
+			<td><button id="H6">H6</button></td><td><button id="H7">H7</button></td>
+			<td><button id="H8">H8</button></td><td><button id="H9">H9</button></td>
+			<td><button id="H10">H10</button></td><td><button id="H11">H11</button></td>
+			<td><button id="H12">H12</button></td>			
 		</tr>
 		<tr>
-			<td><button>I1 </button></td><td><button>I2 </button></td>
-			<td><button class="h">A3</button></td><td><button>I3 </button></td>
-			<td><button>I4 </button></td><td><button>I5</button></td>
-			<td><button>I6</button></td><td><button>I7</button></td>
-			<td><button>I8</button></td><td><button>I9</button></td>
-			<td><button>I10</button></td><td><button>I11</button></td>
-			<td><button>I12</button></td><td><button class="h">A3</button></td>
-			<td><button>I13</button></td><td><button>I14</button></td>	
+			<td><button id="I1">I1 </button></td><td><button id="I2">I2 </button></td>
+			<td><button class="h">A3</button></td><td><button id="I3">I3 </button></td>
+			<td><button id="I4">I4 </button></td><td><button id="I5">I5</button></td>
+			<td><button id="I6">I6</button></td><td><button id="I7">I7</button></td>
+			<td><button id="I8">I8</button></td><td><button id="I9">I9</button></td>
+			<td><button id="I10">I10</button></td><td><button id="I11">I11</button></td>
+			<td><button id="I12">I12</button></td><td><button class="h">A3</button></td>
+			<td><button id="I13">I13</button></td><td><button id="I14">I14</button></td>	
 		</tr>
 		<tr>
-			<td><button>J1</button></td><td><button>J2</button></td>
-			<td><button class="h">A3</button></td><td><button>J3</button></td>
-			<td><button>J4</button></td><td><button>J5</button></td>
-			<td><button>J6</button></td><td><button>J7</button></td>
-			<td><button>J8</button></td><td><button>J9</button></td>
-			<td><button>J10</button></td><td><button>J11</button></td>
-			<td><button>J12</button></td><td><button class="h">A3</button></td>
-			<td><button>J13</button></td><td><button>J14</button></td>	
+			<td><button id="J1">J1</button></td><td><button id="J2">J2</button></td>
+			<td><button class="h">A3</button></td><td><button id="J3">J3</button></td>
+			<td><button id="J4">J4</button></td><td><button id="J5">J5</button></td>
+			<td><button id="J6">J6</button></td><td><button id="J7">J7</button></td>
+			<td><button id="J8">J8</button></td><td><button id="J9">J9</button></td>
+			<td><button id="J10">J10</button></td><td><button id="J11">J11</button></td>
+			<td><button id="J12">J12</button></td><td><button class="h">A3</button></td>
+			<td><button id="J13">J13</button></td><td><button id="J14">J14</button></td>	
 		</tr>
 	</tbody>
 </table>
+<script>
+$(document).ready(function (){
+});
+</script>
+
 
 </body>
 </html>
