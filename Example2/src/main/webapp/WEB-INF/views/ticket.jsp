@@ -82,7 +82,7 @@
 				<li>화 26</li>
 				<li>수 27</li>
 				<li>목 28</li>
-				<li>금 2999</li>
+				<li>금 29</li>
 			</ul>
 		</div>
 	</div><div class="section">
