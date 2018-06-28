@@ -36,4 +36,11 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/ticket", method = RequestMethod.GET)
+	public String displayTicketPage(Locale locale, Model model) {
+		logger.info("Welcome this is ticket page!");
+		
+		return "ticket";
+	}
+	
 }
